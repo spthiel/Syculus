@@ -1,4 +1,4 @@
-package me.elspeth.dino;
+package me.elspeth.syculus;
 
 import java.util.LinkedList;
 import java.util.List;

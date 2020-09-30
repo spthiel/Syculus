@@ -1,22 +1,23 @@
-package me.elspeth.dino;
+package me.elspeth.syculus;
 
-import java.awt.event.KeyEvent;
-import java.util.Arrays;
-import java.util.stream.Collectors;
+import me.elspeth.syculus.world.World;
+import me.elspeth.syculus.world.entities.Player;
 
 public class Main {
 
     private static Updater repaint, update;
 
     public static void main(String[] args) {
+        World w = World.instance;
         var frame = new Frame();
         repaint = new Updater(100);
         repaint.on(frame::repaint);
 
-        update = new Updater(60);
-        update.on(() -> {
 
-        });
+        update = new Updater(60);
+        update.on(World.instance::update);
+
+        w.registerEntitiy(new Player());
 
     }
 

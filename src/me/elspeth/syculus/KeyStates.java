@@ -1,4 +1,4 @@
-package me.elspeth.dino;
+package me.elspeth.syculus;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

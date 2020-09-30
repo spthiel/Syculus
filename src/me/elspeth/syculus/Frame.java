@@ -1,7 +1,6 @@
-package me.elspeth.dino;
+package me.elspeth.syculus;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class Frame extends JFrame {
 
