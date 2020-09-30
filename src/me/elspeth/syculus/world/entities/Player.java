@@ -1,9 +1,9 @@
-package me.elspeth.dino.world.entities;
+package me.elspeth.syculus.world.entities;
 
-public class Player extends Entitiy{
+public class Player extends Entity {
 
     public Player() {
-        super(100, 100, 100, 200);
+        super(100, 100, 100, 200, true);
     }
 
     private enum PlayerState {
@@ -16,9 +16,14 @@ public class Player extends Entitiy{
     }
 
     @Override
-    void update() {
+    public void update() {
+        super.update();
+        System.out.println(getBounds().y);
 
+    }
 
+    @Override
+    public void onCollide() {
 
     }
 }
